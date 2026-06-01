@@ -1,0 +1,4 @@
+interface:
+  display_name: "Chinese Resume Builder"
+  short_description: "Build Chinese resumes from curated templates"
+  default_prompt: "Use $chinese-resume-builder to select a Chinese resume template and generate a polished resume."

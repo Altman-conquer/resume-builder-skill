@@ -1,0 +1,317 @@
+{
+  "source": {
+    "name": "dyweb/awesome-resume-for-chinese",
+    "url": "https://github.com/dyweb/awesome-resume-for-chinese",
+    "note": "Template entries are external upstream projects. This skill indexes them and does not vendor their source."
+  },
+  "templates": [
+    {
+      "id": "dyweb-deedy-resume-for-chinese",
+      "name": "Deedy Resume for Chinese",
+      "url": "https://github.com/dyweb/Deedy-Resume-for-Chinese",
+      "category": "latex",
+      "source": "dyweb/awesome-resume-for-chinese",
+      "audience": "new-grad, student, developer",
+      "build": "xelatex",
+      "license": {"status": "check-upstream", "policy": "preserve-attribution"},
+      "vendored": false
+    },
+    {
+      "id": "geekplux-cv-resume",
+      "name": "cv_resume",
+      "url": "https://github.com/geekplux/cv_resume",
+      "category": "latex",
+      "source": "dyweb/awesome-resume-for-chinese",
+      "audience": "developer, general",
+      "build": "xelatex",
+      "license": {"status": "check-upstream", "policy": "preserve-attribution"},
+      "vendored": false
+    },
+    {
+      "id": "billryan-resume",
+      "name": "billryan/resume",
+      "url": "https://github.com/billryan/resume",
+      "category": "latex",
+      "source": "dyweb/awesome-resume-for-chinese",
+      "audience": "developer, engineering, academic",
+      "build": "xelatex",
+      "license": {"status": "check-upstream", "policy": "preserve-attribution"},
+      "vendored": false
+    },
+    {
+      "id": "hijiangtao-resume",
+      "name": "hijiangtao/resume",
+      "url": "https://github.com/hijiangtao/resume",
+      "category": "latex",
+      "source": "dyweb/awesome-resume-for-chinese",
+      "audience": "developer, Chinese resume",
+      "build": "xelatex",
+      "license": {"status": "check-upstream", "policy": "preserve-attribution"},
+      "vendored": false
+    },
+    {
+      "id": "fky2015-resume-ng",
+      "name": "resume-ng",
+      "url": "https://github.com/fky2015/resume-ng",
+      "category": "latex",
+      "source": "dyweb/awesome-resume-for-chinese",
+      "audience": "developer, dense one-page resume",
+      "build": "xelatex",
+      "license": {"status": "check-upstream", "policy": "preserve-attribution"},
+      "vendored": false
+    },
+    {
+      "id": "liweitianux-resume",
+      "name": "liweitianux/resume",
+      "url": "https://github.com/liweitianux/resume",
+      "category": "latex",
+      "source": "dyweb/awesome-resume-for-chinese",
+      "audience": "Chinese and English resume",
+      "build": "latex",
+      "license": {"status": "check-upstream", "policy": "preserve-attribution"},
+      "vendored": false
+    },
+    {
+      "id": "mszep-pandoc-resume",
+      "name": "pandoc_resume",
+      "url": "https://github.com/mszep/pandoc_resume",
+      "category": "markdown",
+      "source": "dyweb/awesome-resume-for-chinese",
+      "audience": "content-first resume, Markdown users",
+      "build": "pandoc",
+      "license": {"status": "check-upstream", "policy": "preserve-attribution"},
+      "vendored": false
+    },
+    {
+      "id": "luooofan-resume",
+      "name": "luooofan/resume",
+      "url": "https://github.com/luooofan/resume",
+      "category": "latex",
+      "source": "dyweb/awesome-resume-for-chinese",
+      "audience": "Chinese technical resume",
+      "build": "xelatex",
+      "license": {"status": "check-upstream", "policy": "preserve-attribution"},
+      "vendored": false
+    },
+    {
+      "id": "newfuture-cv",
+      "name": "NewFuture/CV",
+      "url": "https://github.com/NewFuture/CV",
+      "category": "html-js",
+      "source": "dyweb/awesome-resume-for-chinese",
+      "audience": "online Markdown resume",
+      "build": "node-or-static",
+      "license": {"status": "check-upstream", "policy": "preserve-attribution"},
+      "vendored": false
+    },
+    {
+      "id": "ovilia-cv",
+      "name": "Ovilia/cv",
+      "url": "https://github.com/Ovilia/cv",
+      "category": "html-js",
+      "source": "dyweb/awesome-resume-for-chinese",
+      "audience": "front-end engineer, web resume",
+      "build": "static-site",
+      "license": {"status": "check-upstream", "policy": "preserve-attribution"},
+      "vendored": false
+    },
+    {
+      "id": "xriley-orbit-theme",
+      "name": "Orbit Theme",
+      "url": "https://github.com/xriley/Orbit-Theme",
+      "category": "html-js",
+      "source": "dyweb/awesome-resume-for-chinese",
+      "audience": "developer portfolio resume",
+      "build": "static-site",
+      "license": {"status": "check-upstream", "policy": "preserve-attribution"},
+      "vendored": false
+    },
+    {
+      "id": "dreambroke-resume-master",
+      "name": "DreamBroke/resume-master",
+      "url": "https://github.com/DreamBroke/resume-master",
+      "category": "markdown",
+      "source": "dyweb/awesome-resume-for-chinese",
+      "audience": "backend developer",
+      "build": "markdown",
+      "license": {"status": "check-upstream", "policy": "preserve-attribution"},
+      "vendored": false
+    },
+    {
+      "id": "itsay-resume",
+      "name": "itsay/resume",
+      "url": "https://gitee.com/itsay/resume",
+      "category": "html-js",
+      "source": "dyweb/awesome-resume-for-chinese",
+      "audience": "front-end and programmer resume",
+      "build": "node-or-static",
+      "license": {"status": "check-upstream", "policy": "preserve-attribution"},
+      "vendored": false
+    },
+    {
+      "id": "hoochanlon-jsonresume-theme-mix",
+      "name": "jsonresume-theme-mix",
+      "url": "https://github.com/hoochanlon/jsonresume-theme-mix",
+      "category": "json-resume",
+      "source": "dyweb/awesome-resume-for-chinese",
+      "audience": "IT operations and structured resume data",
+      "build": "jsonresume",
+      "license": {"status": "check-upstream", "policy": "preserve-attribution"},
+      "vendored": false
+    },
+    {
+      "id": "ckjbug-resume",
+      "name": "ckjbug/Resume",
+      "url": "https://github.com/ckjbug/Resume",
+      "category": "html-js",
+      "source": "dyweb/awesome-resume-for-chinese",
+      "audience": "software developer",
+      "build": "static-site",
+      "license": {"status": "check-upstream", "policy": "preserve-attribution"},
+      "vendored": false
+    },
+    {
+      "id": "crispgm-resume",
+      "name": "crispgm/resume",
+      "url": "https://github.com/crispgm/resume",
+      "category": "html-js",
+      "source": "dyweb/awesome-resume-for-chinese",
+      "audience": "Jekyll minimalist resume",
+      "build": "jekyll",
+      "license": {"status": "check-upstream", "policy": "preserve-attribution"},
+      "vendored": false
+    },
+    {
+      "id": "guanpengchn-markdown-resume",
+      "name": "guanpengchn/markdown-resume",
+      "url": "https://github.com/guanpengchn/markdown-resume",
+      "category": "markdown",
+      "source": "dyweb/awesome-resume-for-chinese",
+      "audience": "Markdown and rich-text resume editing",
+      "build": "markdown",
+      "license": {"status": "check-upstream", "policy": "preserve-attribution"},
+      "vendored": false
+    },
+    {
+      "id": "lxxyx-resume",
+      "name": "LxxyxResume",
+      "url": "https://github.com/Lxxyx/LxxyxResume",
+      "category": "html-js",
+      "source": "dyweb/awesome-resume-for-chinese",
+      "audience": "front-end designer",
+      "build": "static-site",
+      "license": {"status": "check-upstream", "policy": "preserve-attribution"},
+      "vendored": false
+    },
+    {
+      "id": "mcc108-resume",
+      "name": "mcc108/resume",
+      "url": "https://github.com/mcc108/resume",
+      "category": "html-js",
+      "source": "dyweb/awesome-resume-for-chinese",
+      "audience": "front-end developer",
+      "build": "static-site",
+      "license": {"status": "check-upstream", "policy": "preserve-attribution"},
+      "vendored": false
+    },
+    {
+      "id": "xiao555-resume-it",
+      "name": "xiao555/resume-it",
+      "url": "https://github.com/xiao555/resume-it",
+      "category": "html-js",
+      "source": "dyweb/awesome-resume-for-chinese",
+      "audience": "web front-end developer",
+      "build": "static-site",
+      "license": {"status": "check-upstream", "policy": "preserve-attribution"},
+      "vendored": false
+    },
+    {
+      "id": "zhaoky-flqin",
+      "name": "zhaoky/flqin",
+      "url": "https://github.com/zhaoky/flqin",
+      "category": "html-js",
+      "source": "dyweb/awesome-resume-for-chinese",
+      "audience": "front-end developer web resume",
+      "build": "static-site",
+      "license": {"status": "check-upstream", "policy": "preserve-attribution"},
+      "vendored": false
+    },
+    {
+      "id": "yujiangshui-about-me",
+      "name": "yujiangshui/about-me",
+      "url": "https://github.com/yujiangshui/about-me",
+      "category": "html-js",
+      "source": "dyweb/awesome-resume-for-chinese",
+      "audience": "personal online resume",
+      "build": "static-site",
+      "license": {"status": "check-upstream", "policy": "preserve-attribution"},
+      "vendored": false
+    },
+    {
+      "id": "json-resume-onepage",
+      "name": "JSON Resume OnePage",
+      "url": "https://jsonresume.org/",
+      "category": "json-resume",
+      "source": "dyweb/awesome-resume-for-chinese",
+      "audience": "structured resume data",
+      "build": "jsonresume",
+      "license": {"status": "check-upstream", "policy": "preserve-attribution"},
+      "vendored": false
+    },
+    {
+      "id": "nuterian-resume",
+      "name": "nuterian/resume",
+      "url": "https://github.com/nuterian/resume",
+      "category": "html-js",
+      "source": "dyweb/awesome-resume-for-chinese",
+      "audience": "web resume",
+      "build": "static-site",
+      "license": {"status": "check-upstream", "policy": "preserve-attribution"},
+      "vendored": false
+    },
+    {
+      "id": "salomonelli-best-resume-ever",
+      "name": "best-resume-ever",
+      "url": "https://github.com/salomonelli/best-resume-ever",
+      "category": "html-js",
+      "source": "dyweb/awesome-resume-for-chinese",
+      "audience": "multi-template resume selection",
+      "build": "node",
+      "license": {"status": "check-upstream", "policy": "preserve-attribution"},
+      "vendored": false
+    },
+    {
+      "id": "nzbin-resume-boilerplate",
+      "name": "resume-boilerplate",
+      "url": "https://nzbin.github.io/resume-boilerplate/",
+      "category": "html-js",
+      "source": "dyweb/awesome-resume-for-chinese",
+      "audience": "front-end resume writing guide",
+      "build": "static-site",
+      "license": {"status": "check-upstream", "policy": "preserve-attribution"},
+      "vendored": false
+    },
+    {
+      "id": "cyc2018-markdown-resume",
+      "name": "CyC2018/Markdown-Resume",
+      "url": "https://github.com/CyC2018/Markdown-Resume",
+      "category": "markdown",
+      "source": "dyweb/awesome-resume-for-chinese",
+      "audience": "Markdown resume",
+      "build": "markdown",
+      "license": {"status": "check-upstream", "policy": "preserve-attribution"},
+      "vendored": false
+    },
+    {
+      "id": "orangex4-chinese-resume-in-typst",
+      "name": "Chinese Resume in Typst",
+      "url": "https://github.com/OrangeX4/Chinese-Resume-in-Typst",
+      "category": "typst",
+      "source": "dyweb/awesome-resume-for-chinese",
+      "audience": "Chinese Typst resume",
+      "build": "typst",
+      "license": {"status": "check-upstream", "policy": "preserve-attribution"},
+      "vendored": false
+    }
+  ]
+}
