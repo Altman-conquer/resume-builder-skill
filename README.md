@@ -1,18 +1,109 @@
 # resume-builder-skill
 
-一个面向中文简历制作的 Codex Skill。它基于开源中文简历模板索引，帮助 Codex 为用户选择模板、检查授权、按需拉取模板、迁移简历内容、编译输出，并进行最终版面与隐私检查。
+一个面向中文简历制作的 Codex Skill：帮你从开源中文简历模板中选出合适方案，拉取模板，迁移内容，编译输出，并检查最终版面。
 
-本仓库提供的实际 skill 名称是 `chinese-resume-builder`。模板索引主要参考 [dyweb/awesome-resume-for-chinese](https://github.com/dyweb/awesome-resume-for-chinese)，并补充了模板类型、适用场景、构建方式和授权检查信息，方便自动化选择。
+你可以把它理解成 **中文简历模板索引 + Codex 自动简历生成助手**。模板效果来自 [dyweb/awesome-resume-for-chinese](https://github.com/dyweb/awesome-resume-for-chinese) 及其收录的开源项目，本仓库在此基础上增加了 Codex 可读的模板索引、选择规则和自动化脚本。
 
-## 功能
+## 效果预览
 
-- 根据岗位、经验阶段、简历格式和工具链推荐中文简历模板。
-- 支持 LaTeX、Typst、Markdown、HTML/JS、Jekyll 和 JSON Resume 工作流。
-- 默认不打包第三方模板源码，而是保留上游链接和作者信息。
-- 使用模板前检查并保留上游 license 与 attribution。
-- 通过明确的 `git clone --depth 1` 流程按需拉取模板。
-- 自动识别常见 LaTeX、Typst、Node、Markdown 简历项目的构建命令。
-- 指导 Codex 完成中文简历内容改写、模板迁移、版面检查和隐私检查。
+先看能做出来什么效果。安装 skill 后，你可以让 Codex 根据岗位和经历从这些模板中推荐合适的样式，再自动迁移你的简历内容。
+
+### LaTeX 简历
+
+| Deedy Resume for Chinese | cv_resume | resume-ng |
+| --- | --- | --- |
+| <a href="https://github.com/dyweb/Deedy-Resume-for-Chinese"><img src="https://raw.githubusercontent.com/dyweb/Deedy-Resume-for-Chinese/master/OpenFonts.Chinese/sample-image.png" width="260"></a> | <a href="https://github.com/geekplux/cv_resume"><img src="https://raw.githubusercontent.com/geekplux/cv_resume/master/template_cn_blue.png" width="260"></a> | <a href="https://github.com/fky2015/resume-ng"><img src="https://user-images.githubusercontent.com/16451516/217149842-25769714-45b4-4e10-93c9-72ae2cc921c5.png" width="300"></a> |
+
+| billryan/resume | hijiangtao/resume | luooofan/resume |
+| --- | --- | --- |
+| <a href="https://github.com/billryan/resume"><img src="https://user-images.githubusercontent.com/1292567/62409353-3fecfc00-b608-11e9-8e83-84962912c956.png" width="260"></a> | <a href="https://github.com/hijiangtao/resume"><img src="https://i.postimg.cc/7hYTR1MT/hijiangtao.png" width="260"></a> | <a href="https://github.com/luooofan/resume"><img src="https://github.com/luooofan/resume/blob/zh_CN/images/resume_example.jpg?raw=true" width="260"></a> |
+
+### Markdown / HTML / Typst 简历
+
+| NewFuture/CV | CyC2018/Markdown-Resume | Chinese Resume in Typst |
+| --- | --- | --- |
+| <a href="https://github.com/NewFuture/CV"><img src="https://i.postimg.cc/zBcfDqRJ/newfuture.png" width="300"></a> | <a href="https://github.com/CyC2018/Markdown-Resume"><img src="https://i.postimg.cc/fb9hQf4q/Resume.png" width="260"></a> | <a href="https://github.com/OrangeX4/Chinese-Resume-in-Typst"><img src="https://i.postimg.cc/YS1kJH4c/image.png" width="260"></a> |
+
+| 前端网页简历 | JSON Resume | 多模板选择器 |
+| --- | --- | --- |
+| <a href="https://github.com/xiao555/resume-it"><img src="https://raw.githubusercontent.com/xiao555/resume-it/master/resume.png" width="300"></a> | <a href="https://jsonresume.org/"><img src="https://i.postimg.cc/8cDQR3v2/onepage.png" width="260"></a> | <a href="https://github.com/salomonelli/best-resume-ever"><img src="https://i.postimg.cc/qRxZT7tF/salomonelli.png" width="300"></a> |
+
+## 这个 skill 能做什么
+
+- 根据岗位、学历、项目经历和目标风格推荐模板。
+- 支持 LaTeX、Typst、Markdown、HTML/JS、Jekyll、JSON Resume 等常见简历形式。
+- 根据你的原始简历内容迁移到目标模板。
+- 帮你处理中文字体、页数、链接、版面溢出和隐私信息检查。
+- 按需拉取模板仓库，不把所有模板源码塞进本仓库。
+- 提供脚本辅助检查模板 URL、拉取模板、识别编译命令。
+
+## 三步使用
+
+### 1. 安装 skill
+
+```bash
+git clone https://github.com/Altman-conquer/resume-builder-skill.git
+mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
+cp -r resume-builder-skill/skills/chinese-resume-builder "${CODEX_HOME:-$HOME/.codex}/skills/"
+```
+
+安装完成后重启 Codex。
+
+### 2. 直接向 Codex 提需求
+
+```text
+使用 $chinese-resume-builder 帮我选择一个适合应届算法工程师的 LaTeX 中文简历模板。
+```
+
+```text
+使用 $chinese-resume-builder 把我现在的 Markdown 简历改成一页纸中文 LaTeX 简历。
+```
+
+```text
+使用 $chinese-resume-builder 根据我的项目经历生成一份适合后端开发岗位投递的中文简历。
+```
+
+### 3. 得到可继续编辑的简历项目
+
+Codex 会完成模板选择、模板拉取、内容迁移、编译命令识别和最终检查。你拿到的不是一段静态文本，而是可以继续编辑、编译和维护的简历项目。
+
+## 安装
+
+如果你只想安装 skill，可以直接执行：
+
+```bash
+git clone https://github.com/Altman-conquer/resume-builder-skill.git
+mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
+cp -r resume-builder-skill/skills/chinese-resume-builder "${CODEX_HOME:-$HOME/.codex}/skills/"
+```
+
+然后重启 Codex。
+
+## 典型使用场景
+
+### 选择模板
+
+```text
+使用 $chinese-resume-builder，帮我从模板库里选 3 个适合 AI 算法实习投递的中文简历模板，并说明区别。
+```
+
+### 迁移已有简历
+
+```text
+使用 $chinese-resume-builder，把当前仓库里的 resume-zh_CN.tex 改造成信息密度更高的一页纸中文简历。
+```
+
+### 生成新简历
+
+```text
+使用 $chinese-resume-builder，根据我的教育背景、实习经历、项目经历和论文经历生成一份中文简历。
+```
+
+### 检查简历
+
+```text
+使用 $chinese-resume-builder，检查我的中文简历是否有内容冗余、表述不清、链接失效或版面溢出。
+```
 
 ## 仓库结构
 
@@ -39,45 +130,6 @@ resume-builder-skill/
             └── inspect_template_repo.py
 ```
 
-## 安装
-
-克隆仓库：
-
-```bash
-git clone https://github.com/Altman-conquer/resume-builder-skill.git
-```
-
-安装到 Codex skills 目录：
-
-```bash
-mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
-cp -r resume-builder-skill/skills/chinese-resume-builder "${CODEX_HOME:-$HOME/.codex}/skills/"
-```
-
-安装完成后重启 Codex。
-
-## 使用方式
-
-安装后，可以直接向 Codex 提出中文简历相关请求：
-
-```text
-使用 $chinese-resume-builder 帮我选择一个适合应届算法工程师的 LaTeX 中文简历模板。
-```
-
-```text
-使用 $chinese-resume-builder 把我现有的 Markdown 简历改成一页纸中文 LaTeX 简历。
-```
-
-```text
-使用 $chinese-resume-builder 检查这个模板仓库的 license，确认能否拉取并编译示例简历。
-```
-
-```text
-使用 $chinese-resume-builder 检查我的中文简历内容密度、措辞、隐私信息和版面问题。
-```
-
-Codex 会读取 skill 说明、查看模板索引、推荐合适模板、检查授权要求、按需拉取模板，并协助生成最终简历文件。
-
 ## 工具脚本
 
 检查模板仓库 URL：
@@ -102,18 +154,6 @@ python3 skills/chinese-resume-builder/scripts/fetch_template.py \
 python3 skills/chinese-resume-builder/scripts/compile_resume.py --dry-run ./work/deedy-resume
 ```
 
-## 模板授权策略
-
-本仓库默认不复制第三方模板源码。模板条目只指向上游项目，并保留作者与来源信息。
-
-使用模板时，Codex 应当：
-
-- 检查上游仓库或项目主页；
-- 确认 license 和 attribution 要求；
-- 避免复制授权不明确的模板源码；
-- 保留上游版权声明和 license 文件；
-- 只把模板源码拉取到用户指定的工作区。
-
 ## 开发
 
 运行测试：
@@ -131,20 +171,9 @@ python3 "${CODEX_HOME:-$HOME/.codex}/skills/.system/skill-creator/scripts/quick_
 
 ## 贡献
 
-欢迎改进模板索引、skill 指南和工具脚本。
+欢迎继续补充模板索引、效果图、适用场景和脚本能力。
 
-新增模板条目时，请至少提供：
-
-- 模板名称；
-- 上游链接；
-- 模板类型；
-- 来源；
-- 适用人群；
-- 构建工具；
-- license 信息；
-- 是否 vendored。默认应为 `false`。
-
-除非上游 license 明确允许再分发，并且已经保留 attribution 要求，否则不要把第三方模板源码直接加入本仓库。
+新增模板时，请补充模板名称、上游链接、模板类型、适用人群、构建工具和 license 信息。
 
 ## License
 
@@ -158,9 +187,9 @@ python3 "${CODEX_HOME:-$HOME/.codex}/skills/.system/skill-creator/scripts/quick_
 
 `resume-builder-skill` provides a Codex skill named `chinese-resume-builder` for building Chinese resumes from curated open-source templates.
 
-It indexes Chinese-friendly resume templates, recommends suitable options by role and format, checks upstream license requirements, fetches selected templates on demand, helps migrate resume content, detects common build commands, and reviews the final resume for layout and privacy issues.
+It shows template previews first, then helps Codex recommend a template, fetch it, migrate resume content, detect build commands, and review the final output.
 
-### Install
+Install:
 
 ```bash
 git clone https://github.com/Altman-conquer/resume-builder-skill.git
@@ -168,20 +197,8 @@ mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
 cp -r resume-builder-skill/skills/chinese-resume-builder "${CODEX_HOME:-$HOME/.codex}/skills/"
 ```
 
-Restart Codex after installation.
-
-### Example Prompts
+Example:
 
 ```text
-Use $chinese-resume-builder to choose a LaTeX Chinese resume template for a new-grad algorithm engineer.
+Use $chinese-resume-builder to choose a LaTeX Chinese resume template and migrate my existing resume into it.
 ```
-
-```text
-Use $chinese-resume-builder to convert my existing Markdown resume into a one-page Chinese LaTeX resume.
-```
-
-```text
-Use $chinese-resume-builder to inspect a template repository, verify its license, fetch it, and compile a sample resume.
-```
-
-The skill code, scripts, and original documentation are licensed under the MIT License. Third-party templates remain under their upstream licenses.

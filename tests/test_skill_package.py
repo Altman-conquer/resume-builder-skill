@@ -64,6 +64,18 @@ class SkillPackageTests(unittest.TestCase):
                 self.assertIn(field, entry)
             self.assertFalse(entry.get("vendored", False), entry["id"])
 
+    def test_readme_is_chinese_first_and_shows_resume_previews(self):
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        first_body_line = next(
+            line for line in readme.splitlines() if line and not line.startswith("#")
+        )
+
+        self.assertIn("中文简历", first_body_line)
+        self.assertIn("## 效果预览", readme)
+        self.assertIn("sample-image.png", readme)
+        self.assertIn("## 三步使用", readme)
+        self.assertLess(readme.index("## 效果预览"), readme.index("## 安装"))
+
     def test_inspect_template_repo_outputs_github_metadata(self):
         result = run_script(
             "inspect_template_repo.py",
