@@ -14,7 +14,7 @@
 
 <div align="center">
   <a href="https://github.com/dyweb/Deedy-Resume-for-Chinese">
-    <img src="https://raw.githubusercontent.com/dyweb/Deedy-Resume-for-Chinese/master/OpenFonts.Chinese/sample-image.png" width="520">
+    <img src="image/deedy-resume-for-chinese.png" width="520">
   </a>
 </div>
 
@@ -22,7 +22,7 @@
 
 <div align="center">
   <a href="https://github.com/geekplux/cv_resume">
-    <img src="https://raw.githubusercontent.com/geekplux/cv_resume/master/template_cn_blue.png" width="520">
+    <img src="image/cv-resume.png" width="520">
   </a>
 </div>
 
@@ -30,7 +30,7 @@
 
 <div align="center">
   <a href="https://github.com/billryan/resume">
-    <img src="https://user-images.githubusercontent.com/1292567/62409353-3fecfc00-b608-11e9-8e83-84962912c956.png" width="520">
+    <img src="image/billryan-resume.png" width="520">
   </a>
 </div>
 
@@ -38,7 +38,7 @@
 
 <div align="center">
   <a href="https://github.com/hijiangtao/resume">
-    <img src="https://i.postimg.cc/7hYTR1MT/hijiangtao.png" width="520">
+    <img src="image/hijiangtao-resume.png" width="520">
   </a>
 </div>
 
@@ -46,7 +46,7 @@
 
 <div align="center">
   <a href="https://github.com/fky2015/resume-ng">
-    <img src="https://user-images.githubusercontent.com/16451516/217149842-25769714-45b4-4e10-93c9-72ae2cc921c5.png" width="520">
+    <img src="image/resume-ng.png" width="520">
   </a>
 </div>
 
@@ -54,7 +54,7 @@
 
 <div align="center">
   <a href="https://github.com/luooofan/resume">
-    <img src="https://github.com/luooofan/resume/blob/zh_CN/images/resume_example.jpg?raw=true" width="520">
+    <img src="image/luooofan-resume.jpg" width="520">
   </a>
 </div>
 
@@ -64,7 +64,7 @@
 
 <div align="center">
   <a href="https://github.com/NewFuture/CV">
-    <img src="https://i.postimg.cc/zBcfDqRJ/newfuture.png" width="520">
+    <img src="image/newfuture-cv.png" width="520">
   </a>
 </div>
 
@@ -72,7 +72,7 @@
 
 <div align="center">
   <a href="https://github.com/CyC2018/Markdown-Resume">
-    <img src="https://i.postimg.cc/fb9hQf4q/Resume.png" width="520">
+    <img src="image/cyc2018-markdown-resume.png" width="520">
   </a>
 </div>
 
@@ -80,7 +80,7 @@
 
 <div align="center">
   <a href="https://github.com/OrangeX4/Chinese-Resume-in-Typst">
-    <img src="https://i.postimg.cc/YS1kJH4c/image.png" width="520">
+    <img src="image/chinese-resume-in-typst.png" width="520">
   </a>
 </div>
 
@@ -88,7 +88,7 @@
 
 <div align="center">
   <a href="https://github.com/xiao555/resume-it">
-    <img src="https://raw.githubusercontent.com/xiao555/resume-it/master/resume.png" width="520">
+    <img src="image/resume-it.png" width="520">
   </a>
 </div>
 
@@ -96,7 +96,7 @@
 
 <div align="center">
   <a href="https://jsonresume.org/">
-    <img src="https://i.postimg.cc/8cDQR3v2/onepage.png" width="520">
+    <img src="image/jsonresume-onepage.png" width="520">
   </a>
 </div>
 
@@ -104,7 +104,7 @@
 
 <div align="center">
   <a href="https://github.com/salomonelli/best-resume-ever">
-    <img src="https://i.postimg.cc/qRxZT7tF/salomonelli.png" width="520">
+    <img src="image/best-resume-ever.png" width="520">
   </a>
 </div>
 
