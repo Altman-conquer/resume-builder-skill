@@ -75,6 +75,9 @@ class SkillPackageTests(unittest.TestCase):
         self.assertIn("sample-image.png", readme)
         self.assertIn("## 三步使用", readme)
         self.assertLess(readme.index("## 效果预览"), readme.index("## 安装"))
+        self.assertNotIn("| Deedy Resume for Chinese |", readme)
+        self.assertIn('<div align="center">', readme)
+        self.assertIn('width="520"', readme)
 
     def test_inspect_template_repo_outputs_github_metadata(self):
         result = run_script(

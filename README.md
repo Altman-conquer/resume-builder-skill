@@ -10,23 +10,103 @@
 
 ### LaTeX 简历
 
-| Deedy Resume for Chinese | cv_resume | resume-ng |
-| --- | --- | --- |
-| <a href="https://github.com/dyweb/Deedy-Resume-for-Chinese"><img src="https://raw.githubusercontent.com/dyweb/Deedy-Resume-for-Chinese/master/OpenFonts.Chinese/sample-image.png" width="260"></a> | <a href="https://github.com/geekplux/cv_resume"><img src="https://raw.githubusercontent.com/geekplux/cv_resume/master/template_cn_blue.png" width="260"></a> | <a href="https://github.com/fky2015/resume-ng"><img src="https://user-images.githubusercontent.com/16451516/217149842-25769714-45b4-4e10-93c9-72ae2cc921c5.png" width="300"></a> |
+- [dyweb/Deedy-Resume-for-Chinese](https://github.com/dyweb/Deedy-Resume-for-Chinese) 适合应届毕业生的 LaTeX 简历模板。
 
-| billryan/resume | hijiangtao/resume | luooofan/resume |
-| --- | --- | --- |
-| <a href="https://github.com/billryan/resume"><img src="https://user-images.githubusercontent.com/1292567/62409353-3fecfc00-b608-11e9-8e83-84962912c956.png" width="260"></a> | <a href="https://github.com/hijiangtao/resume"><img src="https://i.postimg.cc/7hYTR1MT/hijiangtao.png" width="260"></a> | <a href="https://github.com/luooofan/resume"><img src="https://github.com/luooofan/resume/blob/zh_CN/images/resume_example.jpg?raw=true" width="260"></a> |
+<div align="center">
+  <a href="https://github.com/dyweb/Deedy-Resume-for-Chinese">
+    <img src="https://raw.githubusercontent.com/dyweb/Deedy-Resume-for-Chinese/master/OpenFonts.Chinese/sample-image.png" width="520">
+  </a>
+</div>
+
+- [geekplux/cv_resume](https://github.com/geekplux/cv_resume) 中文简历 LaTeX 模板，基于 ModernCV 优化中文字体支持。
+
+<div align="center">
+  <a href="https://github.com/geekplux/cv_resume">
+    <img src="https://raw.githubusercontent.com/geekplux/cv_resume/master/template_cn_blue.png" width="520">
+  </a>
+</div>
+
+- [billryan/resume](https://github.com/billryan/resume) 优雅的 LaTeX 简历模板，适合技术岗和学术风格简历。
+
+<div align="center">
+  <a href="https://github.com/billryan/resume">
+    <img src="https://user-images.githubusercontent.com/1292567/62409353-3fecfc00-b608-11e9-8e83-84962912c956.png" width="520">
+  </a>
+</div>
+
+- [hijiangtao/resume](https://github.com/hijiangtao/resume) 改良自 billryan/resume 的中文 LaTeX 简历模板。
+
+<div align="center">
+  <a href="https://github.com/hijiangtao/resume">
+    <img src="https://i.postimg.cc/7hYTR1MT/hijiangtao.png" width="520">
+  </a>
+</div>
+
+- [fky2015/resume-ng](https://github.com/fky2015/resume-ng) 注重信息密度和美观度的 LaTeX 简历排版模板。
+
+<div align="center">
+  <a href="https://github.com/fky2015/resume-ng">
+    <img src="https://user-images.githubusercontent.com/16451516/217149842-25769714-45b4-4e10-93c9-72ae2cc921c5.png" width="520">
+  </a>
+</div>
+
+- [luooofan/resume](https://github.com/luooofan/resume) 改良自 billryan/resume 的中文 LaTeX 简历模板。
+
+<div align="center">
+  <a href="https://github.com/luooofan/resume">
+    <img src="https://github.com/luooofan/resume/blob/zh_CN/images/resume_example.jpg?raw=true" width="520">
+  </a>
+</div>
 
 ### Markdown / HTML / Typst 简历
 
-| NewFuture/CV | CyC2018/Markdown-Resume | Chinese Resume in Typst |
-| --- | --- | --- |
-| <a href="https://github.com/NewFuture/CV"><img src="https://i.postimg.cc/zBcfDqRJ/newfuture.png" width="300"></a> | <a href="https://github.com/CyC2018/Markdown-Resume"><img src="https://i.postimg.cc/fb9hQf4q/Resume.png" width="260"></a> | <a href="https://github.com/OrangeX4/Chinese-Resume-in-Typst"><img src="https://i.postimg.cc/YS1kJH4c/image.png" width="260"></a> |
+- [NewFuture/CV](https://github.com/NewFuture/CV) Markdown 在线简历生成模板。
 
-| 前端网页简历 | JSON Resume | 多模板选择器 |
-| --- | --- | --- |
-| <a href="https://github.com/xiao555/resume-it"><img src="https://raw.githubusercontent.com/xiao555/resume-it/master/resume.png" width="300"></a> | <a href="https://jsonresume.org/"><img src="https://i.postimg.cc/8cDQR3v2/onepage.png" width="260"></a> | <a href="https://github.com/salomonelli/best-resume-ever"><img src="https://i.postimg.cc/qRxZT7tF/salomonelli.png" width="300"></a> |
+<div align="center">
+  <a href="https://github.com/NewFuture/CV">
+    <img src="https://i.postimg.cc/zBcfDqRJ/newfuture.png" width="520">
+  </a>
+</div>
+
+- [CyC2018/Markdown-Resume](https://github.com/CyC2018/Markdown-Resume) Markdown 简历模板。
+
+<div align="center">
+  <a href="https://github.com/CyC2018/Markdown-Resume">
+    <img src="https://i.postimg.cc/fb9hQf4q/Resume.png" width="520">
+  </a>
+</div>
+
+- [OrangeX4/Chinese-Resume-in-Typst](https://github.com/OrangeX4/Chinese-Resume-in-Typst) 使用 Typst 编写的中文简历模板。
+
+<div align="center">
+  <a href="https://github.com/OrangeX4/Chinese-Resume-in-Typst">
+    <img src="https://i.postimg.cc/YS1kJH4c/image.png" width="520">
+  </a>
+</div>
+
+- [xiao555/resume-it](https://github.com/xiao555/resume-it) Web 前端工程师求职模板。
+
+<div align="center">
+  <a href="https://github.com/xiao555/resume-it">
+    <img src="https://raw.githubusercontent.com/xiao555/resume-it/master/resume.png" width="520">
+  </a>
+</div>
+
+- [JSON Resume](https://jsonresume.org/) 开源结构化简历标准，适合一份数据生成多套主题。
+
+<div align="center">
+  <a href="https://jsonresume.org/">
+    <img src="https://i.postimg.cc/8cDQR3v2/onepage.png" width="520">
+  </a>
+</div>
+
+- [salomonelli/best-resume-ever](https://github.com/salomonelli/best-resume-ever) 多行业简历模板选择器。
+
+<div align="center">
+  <a href="https://github.com/salomonelli/best-resume-ever">
+    <img src="https://i.postimg.cc/qRxZT7tF/salomonelli.png" width="520">
+  </a>
+</div>
 
 ## 这个 skill 能做什么
 
