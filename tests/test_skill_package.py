@@ -6,6 +6,8 @@ import tempfile
 import unittest
 from pathlib import Path
 
+from PIL import Image
+
 
 ROOT = Path(__file__).resolve().parents[1]
 SKILL_DIR = ROOT / "skills" / "chinese-resume-builder"
@@ -83,6 +85,14 @@ class SkillPackageTests(unittest.TestCase):
         self.assertIn('src="image/billryan-resume.png"', readme)
         for image_path in re.findall(r'<img src="([^"]+)"', readme):
             self.assertTrue((ROOT / image_path).is_file(), image_path)
+
+    def test_social_preview_asset_exists(self):
+        path = ROOT / "image" / "social-preview.png"
+
+        self.assertTrue(path.is_file())
+        with Image.open(path) as image:
+            self.assertEqual(image.size, (1200, 630))
+            self.assertEqual(image.mode, "RGB")
 
     def test_inspect_template_repo_outputs_github_metadata(self):
         result = run_script(
